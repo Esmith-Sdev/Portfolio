@@ -10,5 +10,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: "https://github.com/Esmith-Sdev/Portfolio",
+  base: "https://esmith-sdev.github.io/Portfolio",
 });
