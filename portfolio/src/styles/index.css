@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+@font-face {
+  font-family: "Akira";
+  src: url(../../public/Akira\ Expanded\ Demo.otf);
+}
+:root {
+  --primary-gradient: linear-gradient(
+    to right,
+    #a882ff 0%,
+    #6105e0 51%,
+    #d8c6ff 100%
+  );
+}
+
+h1 {
+  font-size: 5rem !important;
+  font-family: "Akira";
+  color: #f0f8ff !important;
+}
+h2 {
+  font-size: 2rem !important;
+  font-family: "Akira";
+  color: #f0f8ff !important;
+}
+
+.gradientSpan {
+  background-clip: text !important;
+  color: transparent !important;
+  background-image: linear-gradient(
+    to right,
+    #f0f8ff 0%,
+    #a882ff 51%,
+    #1c1d46 100%
+  ) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% auto !important;
+}
+.h2Span {
+  background-clip: text !important;
+  color: transparent !important;
+  background-image: linear-gradient(
+    to right,
+    #f0f8ff 0%,
+    #a882ff 51%,
+    #f0f8ff 100%
+  ) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% auto !important;
+}
+/*Animations*/
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(500px);
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+p {
+  font-family: "Inter";
+  font-size: 1.5rem;
+  color: #f0f8ff;
+  font-weight: 600;
+}
+
+.flashyButton,
+.iconCircle,
+.contactGradient {
+  background-image: var(--primary-gradient);
+}
+.flashyButton {
+  font-weight: 600;
+  font-family: "Inter";
+  font-size: 1rem;
+  margin: 10px;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 15px black;
+  border-radius: 10px;
+  display: block;
+  animation: slide-in-bottom;
+  border: none;
+}
+
+.flashyButton:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+#detach-button-host {
+  display: none;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.cardText {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.iconCircle {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 100%;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 15px black;
+  animation: slide-in-bottom;
+  border: none;
+}
+
+.iconCircle:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.contactGradient {
+  font-family: "Inter";
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  font-size: 1.5rem !important;
+  background-clip: text !important;
+  color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 1s ease;
+  background-size: 300% auto !important;
+  margin-bottom: 0 !important;
+}
+
+.contactGradient:hover {
+  animation: gradient 1s ease forwards;
+}

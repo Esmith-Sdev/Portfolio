@@ -1,0 +1,53 @@
+.navigationBar {
+  background: #00000065;
+  height: 10vh;
+  backdrop-filter: blur(15px);
+}
+
+.navLink {
+  background-image: linear-gradient(
+    to right,
+    #a882ff 0%,
+    #6105e0 51%,
+    #d8c6ff 100%
+  ) !important;
+}
+.navLink {
+  font-family: "Akira";
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  font-size: 1.5rem !important;
+  background-clip: text !important;
+  color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 1s ease;
+  background-size: 300% auto !important;
+}
+.nav-underline .nav-link.active {
+  border-bottom: 2px solid #a882ff !important;
+}
+
+.navLink:hover {
+  animation: gradient 1s ease forwards;
+}
+
+@keyframes gradient {
+  from {
+    background-position: left center;
+  }
+  to {
+    background-position: right center;
+  }
+}
+.navbar-brand {
+  padding-left: 1rem !important;
+}
+.navBrandLogo {
+  width: 6rem;
+  height: auto;
+  overflow: hidden;
+}
+.navBrandLogo:hover {
+  animation: gradient 1s ease forwards;
+}
