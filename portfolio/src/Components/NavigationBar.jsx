@@ -5,7 +5,7 @@ export default function NavigationBar() {
   return (
     <Navbar className="navigationBar" expand="lg" fixed="top">
       <Container fluid>
-        <Navbar.Brand className="navbrand" href="/Portfolio/#home">
+        <Navbar.Brand className="navbrand" href="/Portfolio/#welcome">
           <Image className="navBrandLogo" src={Logo}></Image>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll"></Navbar.Toggle>
