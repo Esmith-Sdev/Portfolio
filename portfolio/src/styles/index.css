@@ -5,13 +5,28 @@
   margin: 0;
   padding: 0;
 }
+
+body,
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
+  width: 100%;
+  height: 100%;
 }
+
 @font-face {
   font-family: "Akira";
   src: url(../../public/Akira\ Expanded\ Demo.otf);
+}
+.section {
+  margin-block: 15rem;
+  padding-block: clamp(3rem, 6vw, 8rem);
+}
+
+.section-inner {
+  width: min(100%, 1200px);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 2rem);
 }
 :root {
   --primary-gradient: linear-gradient(
@@ -21,16 +36,26 @@ html {
     #d8c6ff 100%
   );
 }
-
-h1 {
-  font-size: 5rem !important;
-  font-family: "Akira";
-  color: #f0f8ff !important;
+.about-container {
+  padding: 0 1rem;
+}
+.card-container {
+  background: #00000065;
+  backdrop-filter: blur(15px);
+  padding: 3rem;
+  border-radius: 3rem;
+}
+.card-container-about {
+  background: #00000065;
+  backdrop-filter: blur(15px);
+  padding: 3rem;
+  border-radius: 3rem;
 }
 h2 {
   font-size: 2rem !important;
   font-family: "Akira";
   color: #f0f8ff !important;
+  text-align: center;
 }
 
 .gradientSpan {
@@ -47,6 +72,7 @@ h2 {
   background-size: 100% auto !important;
 }
 .h2Span {
+  font-size: 2rem;
   background-clip: text !important;
   color: transparent !important;
   background-image: linear-gradient(
@@ -172,4 +198,27 @@ p {
 
 .contactGradient:hover {
   animation: gradient 1s ease forwards;
+}
+.projectHeaderText {
+  font-family: "Akira";
+  font-size: 4em;
+}
+.headerText {
+  font-size: 3rem;
+  font-family: "Akira";
+}
+/* Small (≥576px) */
+@media (min-width: 576px) {
+  .headerText {
+    font-size: 4rem !important;
+  }
+}
+/* Large (≥768px) */
+@media (min-width: 768px) {
+  .headerText {
+    font-size: 6rem !important;
+  }
+  .section {
+    margin-block: 30rem;
+  }
 }

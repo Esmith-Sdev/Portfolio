@@ -1,6 +1,6 @@
 .navigationBar {
   background: #00000065;
-
+  width: 100%;
   backdrop-filter: blur(15px);
 }
 
