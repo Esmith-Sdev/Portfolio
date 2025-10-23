@@ -1,6 +1,6 @@
 .navigationBar {
   background: #00000065;
-  height: 10vh;
+
   backdrop-filter: blur(15px);
 }
 
@@ -46,7 +46,6 @@
 .navBrandLogo {
   width: 6rem;
   height: auto;
-  overflow: hidden;
 }
 .navBrandLogo:hover {
   animation: gradient 1s ease forwards;

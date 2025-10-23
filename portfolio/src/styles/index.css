@@ -112,6 +112,7 @@ p {
   display: block;
   animation: slide-in-bottom;
   border: none;
+  text-decoration: none;
 }
 
 .flashyButton:hover {
