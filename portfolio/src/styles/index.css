@@ -42,7 +42,7 @@ html {
 .card-container {
   background: #00000065;
   backdrop-filter: blur(15px);
-  padding: 3rem;
+  padding: 1rem;
   border-radius: 3rem;
 }
 .card-container-about {
@@ -52,7 +52,9 @@ html {
   border-radius: 3rem;
 }
 h2 {
-  font-size: 2rem !important;
+  font-size: 1.3rem !important;
+  overflow-wrap: break-word; /* or newer: anywhere */
+  word-break: break-word;
   font-family: "Akira";
   color: #f0f8ff !important;
   text-align: center;
@@ -72,7 +74,6 @@ h2 {
   background-size: 100% auto !important;
 }
 .h2Span {
-  font-size: 2rem;
   background-clip: text !important;
   color: transparent !important;
   background-image: linear-gradient(
@@ -112,9 +113,11 @@ h2 {
 }
 p {
   font-family: "Inter";
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #f0f8ff;
   font-weight: 600;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .flashyButton,
@@ -183,6 +186,7 @@ p {
   text-decoration: none;
 }
 .contactGradient {
+  font-size: 2rem;
   font-family: "Inter";
   padding-left: 1rem !important;
   padding-right: 1rem !important;
@@ -204,21 +208,94 @@ p {
   font-size: 4em;
 }
 .headerText {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Akira";
+  text-align: center;
 }
+.card-img-top {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+@media (min-width: 250px) {
+  .headerText {
+    font-size: 1.7rem !important;
+  }
+  .section {
+    margin-block: 25rem;
+  }
+  .card-container {
+    padding: 3rem !important;
+  }
+  h2 {
+    font-size: 1.1rem !important;
+  }
+  p {
+    font-size: 1rem !important;
+  }
+  .contactGradient {
+    font-size: 1rem !important;
+  }
+}
+
 /* Small (≥576px) */
 @media (min-width: 576px) {
+  p {
+    font-size: 1rem !important;
+  }
   .headerText {
-    font-size: 4rem !important;
+    font-size: 3rem !important;
+  }
+  h2 {
+    font-size: 2rem !important;
+  }
+  .card-img-top {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .contactGradient {
+    font-size: 1.5rem !important;
+  }
+  .section {
+    margin-block: 25rem;
   }
 }
 /* Large (≥768px) */
 @media (min-width: 768px) {
   .headerText {
+    font-size: 4rem !important;
+  }
+  .section {
+    margin-block: 30rem;
+  }
+  .card-container {
+    padding: 3rem !important;
+  }
+  h2 {
+    font-size: 3rem !important;
+  }
+  p {
+    font-size: 1.5rem !important;
+  }
+  .contactGradient {
+    font-size: 1.5rem !important;
+  }
+}
+/* Large (≥992px) */
+@media (min-width: 992px) {
+  .headerText {
     font-size: 6rem !important;
   }
   .section {
     margin-block: 30rem;
+  }
+  .card-container {
+    padding: 3rem !important;
+  }
+  h2 {
+    font-size: 3rem !important;
+  }
+  p {
+    font-size: 1.5rem !important;
   }
 }
