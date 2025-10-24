@@ -1,5 +1,4 @@
 import { Button, Card, Container, Row, Col } from "react-bootstrap";
-import GuesswhoThumbnail from "../assets/guess-who-logo.png";
 import FishQuestThumbnail from "../assets/FishQuest-Logo-w-text.png";
 import SheinThumbnail from "../assets/shein-final-logo.png";
 export default function Projects() {
@@ -17,40 +16,6 @@ export default function Projects() {
           </h1>
           <Container className="py-4">
             <Row className="g-4 justify-content-center">
-              <Card
-                className="d-flex justify-content-center align-items-center flex-column"
-                style={{
-                  marginTop: "5rem",
-                  border: "2px solid #a882ff",
-                  background: "transparent",
-                }}
-              >
-                <Card.Img
-                  style={{
-                    overflow: "hidden",
-                  }}
-                  variant="top"
-                  src={GuesswhoThumbnail}
-                ></Card.Img>
-                <Card.Body className="d-flex justify-content-center align-items-center flex-column">
-                  <h2>
-                    <span className="h2Span">Guess Who</span>
-                  </h2>
-                  <p className="cardText">
-                    This is a website I made based off the game Guess Who. I
-                    added my own twist to the game by allowing users to use
-                    their own images or choose from templates.
-                  </p>
-                  <a
-                    target="_blank"
-                    href="https://guesswho-kfk5.onrender.com"
-                    style={{ width: "10rem" }}
-                    className="flashyButton w-50 w-md-auto"
-                  >
-                    View
-                  </a>
-                </Card.Body>
-              </Card>
               <Card
                 className="d-flex justify-content-center align-items-center flex-column"
                 style={{
