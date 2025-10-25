@@ -1,6 +1,7 @@
 import { Button, Card, Container, Row, Col } from "react-bootstrap";
 import FishQuestThumbnail from "../assets/FishQuest-Logo-w-text.png";
 import SheinThumbnail from "../assets/shein-final-logo.png";
+import SunriseKitchenThumbnail from "../assets/sunrise-logo.png";
 export default function Projects() {
   return (
     <section className="section">
@@ -43,6 +44,41 @@ export default function Projects() {
                   <a
                     target="_blank"
                     href="https://www.figma.com/proto/Q1O2KU3hjixDBYz1PuyAda/FishQuest-Wireframe.mockup_--Copy-?t=PP10RiQX7fmWVD8Q-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2"
+                    style={{ width: "10rem" }}
+                    className="flashyButton w-50 w-md-auto"
+                  >
+                    View
+                  </a>
+                </Card.Body>
+              </Card>
+              <Card
+                className="d-flex justify-content-center align-items-center flex-column"
+                style={{
+                  marginTop: "5rem",
+                  border: "2px solid #a882ff",
+                  background: "transparent",
+                }}
+              >
+                <Card.Img
+                  style={{
+                    overflow: "hidden",
+                  }}
+                  variant="top"
+                  src={SunriseKitchenThumbnail}
+                ></Card.Img>
+                <Card.Body className="d-flex justify-content-center align-items-center flex-column">
+                  <h2>
+                    <span className="h2Span">Sunrise Kitchen</span>
+                  </h2>
+                  <p className="cardText">
+                    This website was a school project created for a local
+                    Haitian restaurant. It highlights authentic Caribbean
+                    flavors through a modern, responsive design that captures
+                    the restaurant’s warmth and culture.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://esmith-sdev.github.io/sunriseKitchen/"
                     style={{ width: "10rem" }}
                     className="flashyButton w-50 w-md-auto"
                   >
