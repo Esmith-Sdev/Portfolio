@@ -1,4 +1,4 @@
-import { Button, Card, Container, Row, Col } from "react-bootstrap";
+import { Button, Card, Container, Row, Col, Nav } from "react-bootstrap";
 import FishQuestThumbnail from "../assets/FishQuest-Logo-w-text.png";
 import SheinThumbnail from "../assets/shein-final-logo.png";
 import SunriseKitchenThumbnail from "../assets/sunrise-logo.png";
@@ -151,6 +151,13 @@ export default function Projects() {
           </Container>
         </div>
       </div>
+      <Nav.Link href="/Portfolio/#contact">
+        <div className="d-flex flex-column align-items-center mt-5">
+          <div className="iconCircle">
+            <i className="bi bi-arrow-down"></i>
+          </div>
+        </div>
+      </Nav.Link>
     </section>
   );
 }

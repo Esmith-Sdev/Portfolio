@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import "../styles/WelcomeHeader.css";
 export default function WelcomeHeader() {
